@@ -1,23 +1,18 @@
 <template>
     <div class="modal">
-        <q-btn @click="modal">Do something</q-btn>
+        <vk-button @click="modal">My Button</vk-button>
     </div>
 
 </template>
 <script>
     import Vue from 'vue';
-    import Quasar from "quasar-framework/dist/quasar.mat.esm";
-    import "quasar-framework/dist/umd/quasar.mat.css";
-    import Swal from 'sweetalert2';
-    import { QBtn } from "quasar-framework/dist/quasar.mat.esm";
 
-    Vue.use(Quasar);
+    import Vuikit from 'vuikit'
+    import Swal from 'sweetalert2'
+
+    Vue.use(Vuikit)
 
     export default{
-        name: "App",
-        components: {
-            QBtn,
-        },
 
         data(){
             return {
