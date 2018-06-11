@@ -1,6 +1,6 @@
 <template>
     <div class="modal">
-        <vk-button @click="modal">My Button</vk-button>
+        <vk-button type="primary" @click="modal">My Button</vk-button>
     </div>
 
 </template>
