@@ -1,9 +1,7 @@
 <template>
 <div class="modal">
 
-    <md-avatar class="md-avatar-icon">
-        <md-icon>home</md-icon>
-    </md-avatar>
+    <md-button class="md-primary md-raised" @click="modal">Primary</md-button>
 </div>
 </template>
 <script>
