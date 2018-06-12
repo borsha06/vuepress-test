@@ -1,23 +1,23 @@
 <template>
-    <div class="modal">
-        <q-btn @click="modal">Do something</q-btn>
-    </div>
+<div class="modal">
 
+    <md-avatar class="md-avatar-icon">
+        <md-icon>home</md-icon>
+    </md-avatar>
+</div>
 </template>
 <script>
-    import Vue from 'vue';
-    import Quasar from "quasar-framework/dist/quasar.mat.esm";
-    import "quasar-framework/dist/umd/quasar.mat.css";
-    import Swal from 'sweetalert2';
-    import { QBtn } from "quasar-framework/dist/quasar.mat.esm";
 
-    Vue.use(Quasar);
+    import Swal from 'sweetalert2';
+
+    import Vue from 'vue';
+    import VueMaterial from 'vue-material'
+    import 'vue-material/dist/vue-material.css'
+    Vue.use(VueMaterial);
+
+
 
     export default{
-        name: "App",
-        components: {
-            QBtn,
-        },
 
         data(){
             return {
@@ -34,3 +34,7 @@
     }
 
 </script>
+
+    <style scoped>
+    @import "~material-design-icons/iconfont/material-icons.css";
+</style>
